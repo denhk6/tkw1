@@ -1,0 +1,72 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contaner{
+    background: url(images/R.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.fish-contaner{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.fish-contaner img{
+    height: 100px;
+    position: absolute;
+}
+.fish1{
+    top:23%;
+    /*left: -10%;*/
+    transform: translateY(-50%);
+    animation: camapboi 12s linear infinite;
+}
+.fish2{
+    top:110%;
+    /*left: -10%;*/
+    transform: translateY(-50%);
+    animation: ruaboi 25s linear infinite 2s;
+}
+.fish3{
+    top: 70%;
+    /*left: -30%;*/
+    transform: translateY(-50%);
+    animation: cavangboi 17s linear infinite 1s;
+}
+@keyframes camapboi {
+    0%{
+        left: -10%;
+    }
+    100%{
+        left: 150%;
+    }
+}
+@keyframes ruaboi {
+    0%{
+        left: 0%;
+        top: 110%;
+    }
+    50%{
+        left: 70%;
+        top: 50%;
+    }
+    100%{
+        left:110%;
+        top:30%;
+    }
+}
+@keyframes cavangboi{
+    0%{left: 200px;top:100px;}
+            25%{left: 700px; top:200px;}
+            50%{left: 800px;top:300px;}
+            75%{left: 900px;top:200px;}
+            85%{left: 1100px;top: 300px;}
+            100%{left: 0;top:100px;transform:scaleX(-1);}
+}
